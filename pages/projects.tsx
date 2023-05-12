@@ -7,8 +7,10 @@ import React from 'react'
 
 const projects = () => {
 
-    const noteContext = 'I am Submiting all the tasks here with proof and source code. Here I have created a note-taking app using html, css, and javascript, dom concepts and used localStorage for the purpose of storing data.'
+    const noteContext = "I am Submiting all the tasks here with proof and source code. Here I have created a note-taking app using html, css, and javascript, dom concepts and used localStorage for the purpose of storing data. Here due to some bug The delete buttons are not working and I haven't time to debug it. Sorry! I will debug and redeploy it soon." 
     const aicheContext = "I am Submiting all the tasks here with proof and source code. Here I have created an authentication system using passport, express, mongoose and also added a oauth system. As it is a Purely backend system it don't have website."
+    const codeSolutions = "Here I am giving the solutions of the codes that are provided to complete."
+    const codeSolWebUrl = "https://drive.google.com/file/d/1JRy_w2GgYnR2ZzW_A3n4Bw2vSjtOmu4B/view?usp=drivesdk"
     // const 
     const noteTakingGitHubUrl = 'https://github.com/Ashutsoh1729/Note-Taking-App'
     const noteTakingWebsite = 'https://notes-app-by-js-only.netlify.app/'
@@ -21,6 +23,8 @@ const projects = () => {
           <section className='mx-32 my-8'>
               
               <h1 className='text-5xl font-sans font-bold pb-4 pl-2 pt-4 mb-6'>All the projcts will be shown here</h1>
+
+              <ProjectItems name='AIChE Task' context={codeSolutions} webUrl={codeSolWebUrl} img={image}/>
               <ProjectItems name='AIChE Task' context={noteContext} webUrl={noteTakingWebsite} gitUrl={noteTakingGitHubUrl} img={image}/>
               <ProjectItems name='AIChE Task' context={noteContext}  gitUrl={authenticationGitHubUrl} img={image}/>
               <ProjectItems name='AIChE Task' context={counterNote} webUrl={counterWebsiteUrl}   img={image}/>
