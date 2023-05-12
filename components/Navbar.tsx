@@ -46,11 +46,11 @@ const Navbar: React.FC<NavbarProps> = ({ image, name, imgHeight, imgWidth }) => 
                                 Projects
                             </li>
                         </Link>
+                        <Link href={"/#contacts"}>
                         <li className=' nav-item mr-8 font-medium  transition-transform text-xl hover:text-purple-500'>
-                            <a href="#contact">
-                                Contact
-                            </a>
-                            s</li>
+                                Contacts
+                            </li>
+                        </Link>
                     </ul>
                 </div>
             </div>
